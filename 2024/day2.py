@@ -1,4 +1,3 @@
-
 def is_safe(arr):
     # Check if this array is "safe"
     # Either all increasing or all decreasing
@@ -16,7 +15,7 @@ def is_safe(arr):
         elem2 = arr[i + 1]
         diff = elem2 - elem1
         # Check if increasing/decreasing
-        if diff > 0 and sign == -1 or diff <0 and sign == 1:
+        if diff >= 0 and sign == -1 or diff < 0 and sign == 1:
             return False
         # Check if > 1 or <= 3
         if abs(diff) < 1 or abs(diff) > 3:
@@ -46,7 +45,7 @@ def is_safe_with_dampener(arr):
 
 if __name__ == "__main__":
     # Read input
-    with open('./day2_input.txt') as file:
+    with open('./input/day2_input.txt') as file:
         lines = file.readlines()
         safe_lines = 0
         safe_with_dampener_lines = 0

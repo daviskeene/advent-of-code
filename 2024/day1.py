@@ -32,7 +32,7 @@ def solve_2(a_arr, b_arr):
 if __name__ == "__main__":
     # Spaces between values in day1_input.txt
     delimeter = "   "
-    with open("./day1_input.txt") as f:
+    with open("./input/day1_input.txt") as f:
         lines = f.readlines()
         a_arr = []
         b_arr = []
